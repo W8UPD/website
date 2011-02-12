@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>The University of Akron Amateur Radio Club, W8UPD</title>
+    <link rel="stylesheet" href="/media/css/master.css" type="text/css" />
+    <link rel="stylesheet" href="/media/css/rotate.css" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="s3Slider.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+             $('#slider').s3Slider({
+                timeOut: 3000
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="global">
+        <div id="namebar">
+            <div id="namebarcontainer">
+                <span class="alignleft clubname">The University of Akron Amateur Radio Club</span>
+                <span class="alignright callsign">W8UPD</span>
+            </div>
+        </div>
+        <div id="linkbar">
+            <div id="linkbarcontainer">
+                <ul id="linkbarlist">
+                    <li><a href="/portal/">Home</a></li>
+                    <li><a href="/login/">Member Login</a></li>
+                    <li><a href="/logbook/">Log Book</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div id="footer">
+            <span class="alignleft">Design by N8SQL</span>
+            <span class="alignright">&copy; 2011 W8UPD</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+html, body {
+    margin: 0 auto;
+    font-family: helvetica, sans-serif;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+#namebar {
+    background-color: #222222;
+    height: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#namebarcontainer {
+    width: 990px;
+    margin: 0 auto;
+}
+.clubname {
+    font-size: 1.2em;
+    color: #AAAAAA;
+}
+.callsign {
+font-size: 1.2em;
+    font-weight: bold;
+    color: #0099CC;
+}
+#linkbar {
+    background-color: #444444;
+    height: 25px;
+    padding: 10px;
+    padding-left: 22px;
+    padding-right: 20px;
+}
+#linkbarcontainer {
+    width: 990px;
+    margin: 0px auto;
+    height: 25px;
+}
+#linkbarlist {
+    padding: 0;
+    margin-top: 3px;
+    float: left;
+}
+#linkbarlist li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 15px;
+}
+#linkbarlist li a {
+    text-decoration: none;
+    color: #999999;
+}
+#linkbarlist li a:hover {
+    color: #EEEEEE;
+}
+#content {
+    margin: 10px auto;
+    width: 970px;
+    padding: 10px;
+    background-color: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    text-align: left;
+}
+#triportal {
+    margin: 15px auto;
+    padding: 5px;
+    text-align: left;
+}
+#triportal .title {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 13px;
+    font-weight: bold;
+    width: 300px;
+    text-align: left;
+}
+#triportal #leftportal {
+    float: left;
+    width: 300px;
+    margin-right: 21px;
+}
+#triportal #middleportal {
+    float: left;
+    width: 300px;
+    margin-right: 21px;
+}
+#triportal #rightportal {
+    float: left;
+    width: 300px;
+}
+#footer {
+    width: 990px;
+    margin: 0 auto;
+    font-size: 13px;
+}
