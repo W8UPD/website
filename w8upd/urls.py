@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     (r'^$', 'testapp.views.testview'),
     (r'^admin/', include(admin.site.urls)),
     (r'^template/', 'testapp.views.testview'),
+    (r'^p/(.*)/', 'pages.views.viewpage'),
 )
 
 if settings.DEBUG:
