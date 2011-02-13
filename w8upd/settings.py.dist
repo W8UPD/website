@@ -98,3 +98,5 @@ INSTALLED_APPS = (
     'testapp',
     'pages',
 )
+
+LOGIN_URL = '/login/'

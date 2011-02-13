@@ -9,6 +9,9 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     (r'^template/', 'testapp.views.testview'),
     (r'^p/(.*)/', 'pages.views.viewpage'),
+    (r'^portal/', 'pages.views.memberportal'),
+    (r'^login/$', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),
+    (r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
 )
 
 if settings.DEBUG:
