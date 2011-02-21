@@ -1,0 +1,12 @@
+{% block content %}
+        {% for contact in object_list %}
+	<h1> {{ contact.callsign }} </h1> <br>
+	Signal Received: {{ contact.received }} <br>
+	Signal Sent: {{ contact.sent }} <br>
+	Time of Contact:{{ contact.time }} <br>
+	Operator: {{ contact.operator }} <br>
+	Mode of Contact:{{ contact.mode }} <br>
+	Frequency: {{ contact.frequency }} <br><br><br>
+        {% endfor %}
+{% endblock %}
+

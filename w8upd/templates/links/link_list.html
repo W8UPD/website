@@ -1,0 +1,9 @@
+{% block content %}
+    <h2>Links</h2>
+    <ul>
+        {% for link in object_list %}
+          <li> <a href="{{ link.url }}" target='_new'>{{ link.name }}</a>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
