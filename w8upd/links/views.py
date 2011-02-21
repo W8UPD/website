@@ -1,5 +1,6 @@
-# Create your views here.
-from django.http import HttpResponse
+from django.shortcuts import render_to_response
+from links.models import *
 
-def index(request):
-	return HttpResponse("Hello World.")
+def all_links(request):
+    links = Link.objects.all()
+    return render_to_response('links.html', {'links': links})

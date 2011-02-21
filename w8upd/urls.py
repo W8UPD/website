@@ -2,7 +2,6 @@ from django.conf.urls.defaults import *
 from django.conf import settings
 from django.contrib import admin
 from django.views.generic import list_detail
-from links.models import *
 from logbook.models import *
 
 admin.autodiscover()
@@ -15,7 +14,7 @@ urlpatterns = patterns('',
     (r'^portal/', 'pages.views.memberportal'),
     (r'^login/$', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),
     (r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
-    (r'^links/$', list_detail.object_list, {"queryset" : Link.objects.all()}),
+    (r'^links/$', 'links.views.all_links'),
     (r'^contacts/$', list_detail.object_list, {"queryset" : Contact.objects.all()}),
 
 )
