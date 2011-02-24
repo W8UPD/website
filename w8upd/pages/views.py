@@ -4,8 +4,10 @@ from django.contrib.auth.decorators import login_required
 from django.template import RequestContext
 
 def viewpage(request, slug):
-    page = get_object_or_404(Page, slug=slug)
-    return render_to_response('page.html', { 'page': page })
+    c = {}
+    c['user'] = request.user
+    c['page'] = get_object_or_404(Page, slug=slug)
+    return render_to_response('page.html', c)
 
 @login_required
 def memberportal(request):
