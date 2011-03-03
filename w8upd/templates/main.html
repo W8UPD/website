@@ -33,9 +33,10 @@
         </div>
         <div id="content">
             {% block content %}{% endblock %}
+            <div style="clear: both"></div>
         </div>
         <div id="footer">
-            <span class="alignleft">Design by N8SQL</span>
+            <span class="alignleft">Design by N8SQL<br />{% if user.is_superuser %}<a href="/admin/">Administration Panel</a>{% endif %}</span>
             <span class="alignright">&copy; 2011 W8UPD</span>
         </div>
     </div>
