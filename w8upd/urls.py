@@ -10,13 +10,14 @@ urlpatterns = patterns('',
     (r'^$', 'testapp.views.testview'),
     (r'^admin/', include(admin.site.urls)),
     (r'^template/', 'testapp.views.testview'),
-    (r'^p/(.*)/', 'pages.views.viewpage'),
     (r'^portal/', 'members.views.memberportal'),
     (r'^login/$', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),
     (r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
     (r'^links/$', 'links.views.all_links'),
     (r'^contacts/$', list_detail.object_list, {"queryset" : Contact.objects.all()}),
 
+    # And a catchall.
+    (r'^(.*)/', 'pages.views.viewpage'),
 )
 
 if settings.DEBUG:
