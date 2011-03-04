@@ -22,15 +22,19 @@
             <div id="triportal">
                 <div id="leftportal">
                     <div class="title">Recent Contacts</div>
-                    <p>Well 10m was open on the 2nd Wasnt it!</p>
+                    <ul>
+                        {% for contact in contacts %}
+                        <li>{{ contact.callsign }}</li>
+                        {% endfor %}
+                    </ul>                    
                 </div>
                 <div id="middleportal">
                     <div class="title">Club News</div>
                     <p>Work is on to get this site where the old site now sits.</p>
                 </div>
                 <div id="rightportal">
-                    <div class="title">Member Facebook Feed</div>
-                    <p>Its Johnny!</p>
+                    <div class="title">Upcoming Events</div>
+                    <p>Foobar!</p>
                 </div>
                 <div style="clear: both;"></div>
             </div>
