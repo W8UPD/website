@@ -1,0 +1,5 @@
+Differences between Production and Repository settings.py
+- Secret Key
+- DB Info
+- DEBUG
+- ADMINS info
