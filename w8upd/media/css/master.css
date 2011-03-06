@@ -24,11 +24,13 @@ html, body {
 .clubname {
     font-size: 1.2em;
     color: #AAAAAA;
+    text-align: left;
 }
 .callsign {
-font-size: 1.2em;
+    font-size: 1.2em;
     font-weight: bold;
     color: #0099CC;
+    text-align: left;
 }
 #linkbar {
     background-color: #444444;
