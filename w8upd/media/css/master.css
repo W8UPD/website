@@ -101,7 +101,7 @@ html, body {
 #footer {
     width: 990px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-size: 13px;
     text-align: left;
     color: #888888;
