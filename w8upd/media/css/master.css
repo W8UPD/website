@@ -34,7 +34,7 @@ html, body {
 }
 #linkbar {
     background-color: #444444;
-    height: 20px;
+    height: 25px;
     padding: 10px;
     padding-left: 22px;
     padding-right: 20px;
@@ -42,7 +42,7 @@ html, body {
 #linkbarcontainer {
     width: 990px;
     margin: 0px auto;
-    height: 25px;
+    height: 15px;
 }
 #linkbarlist {
     padding: 0;
