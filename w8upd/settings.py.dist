@@ -107,4 +107,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.contrib.auth.context_processors.auth',
     'logbook.context_processors.recent_contacts',
+    'pages.context_processors.versioninfo',
 )
