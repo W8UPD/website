@@ -1,5 +1,5 @@
 import sys,os,django
-from page.models import Page
+from pages.models import Page
 
 def versioninfo(request):
     python = sys.version.split()[0]
