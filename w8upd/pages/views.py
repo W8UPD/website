@@ -7,7 +7,7 @@ def viewpage(request, slug):
     c = {}
     c['user'] = request.user
     c['page'] = get_object_or_404(Page, slug=slug)
-    return render_to_response('page.html', c)
+    return render_to_response('page.html', c, context_instance=RequestContext(request))
 
 @login_required
 def memberportal(request):
