@@ -1,5 +1,7 @@
 {% extends "main.html" %}
 {% load markup %}
 {% block content %}
-{{ page.body|markdown }}
+<div id="page">
+    {{ page.body|markdown }}
+</div>
 {% endblock %}
