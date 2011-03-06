@@ -25,8 +25,11 @@
             <div id="linkbarcontainer">
                 <ul id="linkbarlist">
                     <li><a href="/">Home</a></li>
-                    {% if not user.is_authenticated %}<li><a href="/portal/">Member Login</a></li>{% endif %}
+                    <li><a href="/club-info/">Club</a></li>
+                    <li><a href="/repeater/">Repeater</a></li>
+                    <li><a href="/calendar/">Calendar</a></li>
                     <li><a href="/logbook/">Log Book</a></li>
+                    {% if not user.is_authenticated %}<li><a href="/portal/">Member Login</a></li>{% endif %}
                     {% if user.is_authenticated %}<li><a href="/logout">Log Out</a></li>{% endif %}
                 </ul>
             </div>
