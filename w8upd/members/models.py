@@ -1,5 +1,8 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class UserProfile(models.Model):
-    license_class = models.CharField(max_length=255)
-    office = models.CharField(max_length=3, choice=OFFICE_CHOICES) # why 3 characters to define the class....wtf? WLet me show you how I did it last time.
+    user = models.ForeignKey(User, unique=True)
+    picture_url = models.URLField(max_length=255)
+    major = models.CharField(max_length=255)
+    biography = models.TextField()
