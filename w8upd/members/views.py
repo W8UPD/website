@@ -4,12 +4,12 @@ from django.template import RequestContext
 from logbook.forms import ContactForm
 
 @login_required
-def memberportal(request):
+def memberprofile(request):
     if request.method == 'POST':
         print "foo"
     else:
         c = {}
         c['contactform'] = ContactForm()
         c['user'] = request.user
-        return render_to_response('portal.html', c, context_instance=RequestContext(request))
+        return render_to_response('profile.html', c, context_instance=RequestContext(request))
 
