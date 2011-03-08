@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     (r'^template/', 'testapp.views.testview'),
     
-    (r'^profile/$', include('members.urls')),
+    (r'^profile/', include('members.urls')),
     
     (r'^login/$', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),
     (r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),

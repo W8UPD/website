@@ -102,7 +102,7 @@ INSTALLED_APPS = (
 )
 
 LOGIN_URL = '/login/'
-AUTH_PROFILE_MODEL = 'members.UserProfile'
+AUTH_PROFILE_MODULE = 'members.UserProfile'
 
 
 TEMPLATE_CONTEXT_PROCESSORS = (

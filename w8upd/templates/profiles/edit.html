@@ -1,0 +1,8 @@
+{% extends "main.html" %}
+{% block content %}
+    <h3>Edit Your Profile</h3>
+    <form action='' method='post'>{% csrf_token %}
+    {{ profileform.as_p }}
+    <input type='submit' value='Save Profile'>
+    </form>
+{% endblock %}
