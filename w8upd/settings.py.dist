@@ -97,10 +97,12 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'testapp',
     'pages',
+    'members',
+    'logbook',
 )
 
 LOGIN_URL = '/login/'
-AUTH_PROFILE_MODEL = 'members.UserProfile'
+AUTH_PROFILE_MODULE = 'members.UserProfile'
 
 
 TEMPLATE_CONTEXT_PROCESSORS = (
