@@ -1,7 +1,23 @@
 {% extends "main.html" %}
+
+{% block appendheader %}
+<link rel="stylesheet" href="/media/css/profile.css" type="text/css" />
+{% endblock %}
+
 {% block content %}
-    <h3>Hey there, {{ user.get_full_name }}!</h3>
-    <p>Hello!</p>
-    Major: {{ profile.major }}<br>
-    Bio: {{ profile.biography }}<br>
+<div id="quickview">
+    <div id="userpicture">
+        <img class="profpic" src="{{ profile.picture_url }}" alt="{{ user.get_full_name }}'s profile picture" />
+    </div>
+    <div id="userinfo">
+        {{ user.get_full_name }} ({{ user.username|upper }})<br />
+        Majoring in {{ profile.major }}<br />
+        
+    </div>
+    
+    <div style="clear: both;"></div>
+</div>
+
+
+
 {% endblock %}

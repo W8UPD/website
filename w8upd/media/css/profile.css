@@ -1,0 +1,17 @@
+#quickview {
+}
+
+#quickview .profpic {
+    width: 80px;
+    height: 80px;
+}
+
+#quickview #userpicture {
+    float: left;
+}
+
+#quickview #userinfo {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}

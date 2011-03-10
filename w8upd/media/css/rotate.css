@@ -1,3 +1,7 @@
+#globalslider {
+    margin-top: 10px;
+}
+
 #slider {
     width: 950px; /* important to be same as image width */
     height: 250px; /* important to be same as image height */

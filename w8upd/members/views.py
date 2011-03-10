@@ -5,6 +5,7 @@ from django.template import RequestContext
 from logbook.forms import ContactForm
 from members.forms import UserProfileForm
 from members.models import *
+import hashlib
 
 # Helper methods
 def profile_object(user):
@@ -19,8 +20,10 @@ def memberprofile(request):
     else:
         c = {}
         # c['contactform'] = ContactForm()
+        c['profile'], c['created'] = profile_object(request.user)
         c['user'] = request.user
-        c['profile'] = request.user.get_profile()
+        if c['profile'].picture_url == '':
+            c['profile'].picture_url = "http://www.gravatar.com/avatar/" + hashlib.md5(c['user'].email.lower()).hexdigest() + "?size=80"
         return render_to_response('profiles/view.html', c, context_instance=RequestContext(request))
 
 @login_required

@@ -13,6 +13,7 @@
             });
         });
     </script>
+    {% block appendheader %}{% endblock %}
 </head>
 <body>
     <div id="global">
@@ -40,6 +41,7 @@
                 </ul>
             </div>
         </div>
+        {% block beforecontent %}{% endblock %}
         <div id="content">
             {% block content %}{% endblock %}
             <div style="clear: both"></div>
