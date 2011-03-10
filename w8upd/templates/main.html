@@ -4,6 +4,9 @@
     <title>The University of Akron Amateur Radio Club, W8UPD</title>
     <link rel="stylesheet" href="/media/css/master.css" type="text/css" />
     <link rel="stylesheet" href="/media/css/rotate.css" type="text/css" />
+    {% if request.META.SERVER_NAME == 'beta.w8upd.org' %}
+    <link rel="stylesheet" href="/media/css/beta.css" type="text/css" />
+    {% endif %}
     <script type="text/javascript" src="/media/js/jquery.min.js"></script>
     <script type="text/javascript" src="/media/js/s3Slider.js"></script>
     <script type="text/javascript">
@@ -20,7 +23,7 @@
         <div id="namebar">
             <div id="namebarcontainer">
                 <span class="alignleft clubname">The University of Akron Amateur Radio Club</span>
-                <span class="alignright callsign">{% if request.META.SERVER_NAME == 'beta.w8upd.org' %}BETA SITE{% else %}W8UPD{% endif %}</span>
+                <span class="alignright callsign">W8UPD</span>
             </div>
         </div>
         <div id="linkbar">
