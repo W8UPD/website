@@ -9,6 +9,10 @@ def viewpage(request, slug):
     c['page'] = get_object_or_404(Page, slug=slug)
     return render_to_response('page.html', c, context_instance=RequestContext(request))
 
+def index(request):
+    # We still pass RequestContext for so we can use context processors.
+    return render_to_response('index.html', {}, context_instance=RequestContext(request))
+
 @login_required
 def memberportal(request):
     c = {}

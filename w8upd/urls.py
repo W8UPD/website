@@ -7,7 +7,7 @@ from logbook.models import *
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    (r'^$', 'testapp.views.testview'),
+    (r'^$', 'pages.views.index'),
     (r'^admin/', include(admin.site.urls)),
     (r'^template/', 'testapp.views.testview'),
     
