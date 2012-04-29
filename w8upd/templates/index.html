@@ -22,33 +22,24 @@
                 </ul>
             </div> 
             <div id="triportal">
-                <div id="leftportal">
-                    <div class="title">Upcoming Events</div>
-		    <p><h3>April:</h3></p>
-		    <li>30 Mon - Start Exam Week</li>
-	    	    </p>
-		    <p><h3>May:</h3></p>
-                    <li>7 Mon - W8UPD Meeting, Zook 501</li>
-                    <li>14 Mon - W8UPD Meeting, Zook 501</li>
-		    <li>17 Thu - Dayton Hamvention Road Trip!</li>
-                    <li>20 Sun - Back from Dayton</li>
-                    <li>21 Mon - W8UPD Meeting... for the die-hards</li>
-	    	    </p>
-               </div>
-                <div id="middleportal">
-                    <div class="title">Club News</div>
-	    <p>Dayton hamvention is just around the corner. Rooms have been reserved. Use 145.170MHz simplex for W8UPD group talk. See you down at dayton!</p><br>
-            <p>Field day is not too far away! Field day planning will commence after Dayton Hamvention.</p>
-		</div>
-                <div id="rightportal">
-                    <div class="title">Recent Contacts</div>
-                    <ul>
-                        {% for contact in contacts %}
-                        <li>{{ contact.callsign }}</li>
-                        {% endfor %}
-                    </ul>                    
-               </div>
-                <div style="clear: both;"></div>
+              <div class="left">
+                <div class="title">Upcoming Events</div>
+		            <h3>April:</h3>
+		            <li>30 Mon - Start Exam Week</li>
+
+                <h3>May:</h3>
+                <li>7 Mon - W8UPD Meeting, Zook 501</li>
+                <li>14 Mon - W8UPD Meeting, Zook 501</li>
+		            <li>17 Thu - Dayton Hamvention Road Trip!</li>
+                <li>20 Sun - Back from Dayton</li>
+                <li>21 Mon - W8UPD Meeting... for the die-hards</li>
+              </div>
+              <div class="right">
+                <div class="title">Club News</div>
+                <p>Dayton hamvention is just around the corner. Rooms have been reserved. Use 145.170MHz simplex for W8UPD group talk. See you down at dayton!</p><br>
+                <p>Field day is not too far away! Field day planning will commence after Dayton Hamvention.</p>
+		          </div>
+              <div style="clear: both;"></div>
             </div>
         </div>
 {% endblock %}

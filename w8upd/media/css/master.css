@@ -141,22 +141,16 @@ img.profileimg {
     border-bottom: 1px solid #CCCCCC;
     font-size: 13px;
     font-weight: bold;
-    width: 290px;
+    width: 80%;
     text-align: left;
 }
-#triportal #leftportal {
+#triportal .left {
     float: left;
-    width: 290px;
-    margin-right: 21px;
+    width: 460px;
 }
-#triportal #middleportal {
+#triportal .right {
     float: left;
-    width: 290px;
-    margin-right: 21px;
-}
-#triportal #rightportal {
-    float: left;
-    width: 290px;
+    width: 460px;
 }
 
 /* Footer */
