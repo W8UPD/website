@@ -2,6 +2,10 @@
 
 This is the current production site, w8upd.org.
 
+## Changes to pages of w8upd.org
+
+You can make many changes to the content of the site through the django administration panel. This is *not* the place to make changes to most content. See if you can make changes first. If you have any questions ask! We will be happy to address them!
+
 ## To deploy
 
 * ssh w8upd.org
