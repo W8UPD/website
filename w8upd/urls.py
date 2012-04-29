@@ -9,7 +9,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     (r'^$', 'pages.views.index'),
     (r'^admin/', include(admin.site.urls)),
-    (r'^template/', 'testapp.views.testview'),
+    #(r'^template/', 'testapp.views.testview'),
     
     (r'^profile/', include('members.urls')),
     

@@ -2,16 +2,30 @@
 }
 
 #quickview .profpic {
-    width: 80px;
-    height: 80px;
+    width: 100%;
 }
 
-#quickview #userpicture {
+#quickview #leftcol {
     float: left;
+    width: 170px;
 }
 
 #quickview #userinfo {
     display: block;
     float: left;
     margin-left: 10px;
+}
+
+/* Used in editing a profile; should be moved to separate css file */
+table#profileeditform {
+    text-align: left;
+}
+
+table#profileeditform td {
+    padding: 10px 0 10px 0;
+}
+
+.member {
+    height: 150px;
+    border-bottom: 2px solid black;
 }

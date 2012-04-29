@@ -3,8 +3,11 @@
             <div id="slider">
                 <ul id="sliderContent">
                 <li class="sliderImage">
+                    <img src="/media/rotatepics/pic4.jpg" alt="1" />
+                    <span class="top"><strong>W8UPD Group Photo, April 2012</strong></span>
+                </li>
+                <li class="sliderImage">
                     <img src="/media/rotatepics/pic1.jpg" alt="1" />
-
                     <span class="top"><strong>Towers on the hills to Cleveland</strong></span>
                 </li>
                 <li class="sliderImage">
@@ -12,7 +15,6 @@
                     <span class="top"><strong>Sunset at Zook</strong></span>
                 </li>
                 <li class="sliderImage">
-
                     <img src="/media/rotatepics/pic3.jpg" alt="3" />
                     <span class="bottom"><strong>The Union, Soccer field, and Football Stadium to Zooks south at night</strong></span>
                 </li>
@@ -21,28 +23,28 @@
             </div> 
             <div id="triportal">
                 <div id="leftportal">
+                    <div class="title">Upcoming Events</div>
+		    <p><h3>October:</h3></p>
+		    <li><i>10 Mon - W8UPD Meeting Zook 501 7pm</i></li>
+		    <li>17-22 Mon-Sat - ARRL School Club Roundup</li>
+		    <li><i>17 Mon - W8UPD Meeting Zook 501 7pm</i><li>
+		    <li>21-22 Fri-Sat - Orionids Meteor Shower, 20 ZHR</li>
+		    <li><i>24 Mon - W8UPD Meeting Zook 501 7pm</i></li>
+		    <li>29-30 Sat-Sun - CQ World Wide DX Contest, SSB</li>
+	    	    </p>
+               </div>
+                <div id="middleportal">
+                    <div class="title">Club News</div>
+	    <p>Club Elections Have now taken place new officers include:<br><br>President: Jimmy Carter<br>Vice President: Ricky Elrod<br>Secretary/Treasurer: Andrew Hewko<br>System Admin: Chris Egeland <br><br></p>
+		</div>
+                <div id="rightportal">
                     <div class="title">Recent Contacts</div>
                     <ul>
                         {% for contact in contacts %}
                         <li>{{ contact.callsign }}</li>
                         {% endfor %}
                     </ul>                    
-                </div>
-                <div id="middleportal">
-                    <div class="title">Club News</div>
-                    <p>This site now live.</p>
-                </div>
-                <div id="rightportal">
-                    <div class="title">Upcoming Events</div>
-                    <p>April</p>
-                    <p>- 11 Mon - Meeting</p>
-                    <p>- 15 Fri - Meeting</p>
-                    <p>- 18 Mon - Meeting</p>
-                    <p>- 22 Fri - Meeting</p>
-                    <p>- 24 Sun - Easter</p>
-                    <p>- 25 Mon - Meeting</p>
-                    <p>- 29 Fri - Meeting</p>
-                </div>
+               </div>
                 <div style="clear: both;"></div>
             </div>
         </div>

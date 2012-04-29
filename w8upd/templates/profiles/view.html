@@ -1,4 +1,5 @@
 {% extends "main.html" %}
+{% load markup %}
 
 {% block appendheader %}
 <link rel="stylesheet" href="/media/css/profile.css" type="text/css" />
@@ -6,13 +7,18 @@
 
 {% block content %}
 <div id="quickview">
-    <div id="userpicture">
+    <div id="leftcol">
         <img class="profpic" src="{{ profile.picture_url }}" alt="{{ user.get_full_name }}'s profile picture" />
+        <ul>
+            <li><a href="/profile/edit/">Edit Profile</a></li>
+            <li><a href="/profile/contacts/">Your Logged Contacts</a></li>
+            <li><a href="/some/random/link">Another link</a></li>
+        </ul>
     </div>
     <div id="userinfo">
         {{ user.get_full_name }} ({{ user.username|upper }})<br />
         Majoring in {{ profile.major }}<br />
-        
+        {{ profile.biography|markdown }}
     </div>
     
     <div style="clear: both;"></div>

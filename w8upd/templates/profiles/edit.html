@@ -1,8 +1,20 @@
 {% extends "main.html" %}
+
+{% block appendheader %}
+<link rel="stylesheet" href="/media/css/profile.css" type="text/css" />
+{% endblock %}
+
+{% block pagetitle %}
+    <b>{{ request.user.get_full_name }}</b> :: Edit Profile
+{% endblock %}
+
 {% block content %}
-    <h3>Edit Your Profile</h3>
     <form action='' method='post'>{% csrf_token %}
-    {{ profileform.as_p }}
-    <input type='submit' value='Save Profile'>
+        <table id="profileeditform">
+            {{ profileform.as_table }}
+            <tr>
+                <td><input type='submit' value='Save Profile'></td>
+            </tr>
+        </table>
     </form>
 {% endblock %}
